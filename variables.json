@@ -1,0 +1,18 @@
+{
+	"title": "Drug-checking: comment les fêtards genevois font tester leur drogue",
+	"titlesocial": "Voici comment les fêtards genevois font tester leur drogue",
+	"description": "Pour la première fois, un consommateur, un drug-checking et le labo toxicologique des Hôpitaux universitaires de Genève ont laissé un journaliste suivre des échantillons de MDMA et de coke à la trace.",
+	"authors": {
+		"photos": "Valentin Flauraud",
+		"writer": "Amit Juillard",
+		"dev": "César Greppin"
+	},
+	"imgSocial": "social.jpg",
+	"headertheme": "neg", 
+	"headerBoxed": false,
+	"pubDate": "2020-07-23T11:00:00+00:00",
+	"partner": {
+		"logo": "img/empty.png",
+		"link": "https://www.blick.ch/"
+	}
+}

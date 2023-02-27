@@ -1,0 +1,745 @@
+{% use '_blocks.html.twig' %}
+
+<!DOCTYPE HTML>
+
+<html> 
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		{# <?php include 'hb_card_tp.php'; ?> #}
+		{{ block('head_brand') }}
+	</head>
+
+	<body class="">
+		{# {{ block('bar_brand') }} #}
+		{{ block('header') }}
+		{{ block('overlay') }}
+		{# <?php include 'hb_header_tp.php'; ?> #}
+		
+		<!-- <div class="container max-w-screen-2xl relative bg-white">
+			<figure class="hero w-full">
+				<div class="background w-full h-full bg-white bg-center bg-cover contrast-125 bg-gray-900 relative" style="background-image:url('img/this/1/_f1_8532.jpg');">
+					<div class="px-4 py-4 max-w-2xl absolute bottom-4">
+						<h1 class="text-3xl md:text-5xl text-white font-semibold">Je suis allé faire analyser de la drogue</h1>
+					</div>
+				</div>
+				<figcaption class="py-2 px-4 max-w-2xl text-xs">Le drug testing, comment ça marche?</figcaption>
+			</figure>
+		</div> -->
+		<div class="hero container max-w-screen-2xl md:flex flex-row-reverse">
+			
+			<div class="herochild w-full md:w-1/2">
+				<figure class="w-full h-full float-right bg-bottom bg-cover contrast-125" style="background-image:url('img/this/1/_f2_8580.jpg');">
+				</figure>
+			</div>
+			<div class="herogradient w-full md:w-1/2 px-4 md:px-12 pt-8 md:pt-28 pb-8 md:pb-12">
+				<div class="">
+					<h1 class="text-gradient text-4xl md:text-7xl font-semibold mb-6 md:mb-10 ">Je suis allé faire tester de la drogue</h1>
+					<div class="container authors flex py-4 border-y border-slate-400">
+						<div class="author w-40">
+							<a target="_blank" href="https://www.blick.ch/fr/auteurs/amit-juillard-journaliste-blick-id16519941.html" class="flex items-center">
+								<div class="align-text-bottom text-xs">
+									<span class="inline-block font-extrabold underline">Amit Juillard</span><br>
+									<span class="inline-block">Texte</span>
+								</div>
+							</a>
+						</div>
+						<div class="author w-48">
+								<div class="align-text-bottom text-xs">
+									<span class="inline-block font-extrabold">Valentin Flauraud</span><br>
+									<span class="inline-block">Photographie</span>
+								</div>
+						</div>
+						<div class="author w-48">
+								<div class="align-text-bottom text-xs">
+									<span class="inline-block font-extrabold">César Greppin</span><br>
+									<span class="inline-block">Format web</span>
+								</div>
+						</div>
+						
+					</div>
+					<h2 class="text-xl md:text-2xl mt-6 md:mt-10">Pour la première fois, un consommateur, un drug-checking et le labo toxicologique des Hôpitaux universitaires de Genève ont laissé un journaliste suivre des échantillons de MDMA et de coke à la trace.
+					</h2>
+					{{ block('social') }}
+				</div>
+			</div>
+		</div>
+
+		
+
+		<div class="container max-w-screen-2xl px-4 relative bg-white">
+			<!-- <div class="chapeau container py-8 max-w-2xl">
+				<h2 class="text-xl md:text-2xl mt-2 md:mt-12">Pour la première fois, un consommateur, un drug-checking et le labo toxicologique des Hôpitaux universitaires de Genève ont laissé un journaliste suivre des échantillons de MDMA et de coke à la trace.
+				</h2>
+			</div>            
+
+			
+			
+			<section>
+				<div class="container pt-8 pb-4 max-w-2xl">
+				<p class="lettrine text-lg font-light mb-6">Il a besoin de savoir s’il peut consommer sa poudre et ses cristaux en limitant la casse pour son cerveau.</p>
+				<p class="text-lg font-light mb-6">Pour la première fois, l’association et le labo toxicologique des HUG laisseront un journaliste suivre des échantillons illégaux à la trace. Mais, maintenant que je suis chez lui, laissez-moi d’abord vous présenter mon nouveau compagnon de voyage, un universitaire de 24 ans, épris d’amour pour le sexe en compagnie d’une substance illicite et de… ses deux meufs.
+				</p>
+				<blockquote class="bg-slate-100 mt-12 mb-12 border-l-4 border-black pl-4 block">
+					<span class="text-4xl font-semibold leading-normal bg-amber-100">« Passer pour un idiot aux yeux d'un imbécile est une volupté de fin gourmet »</span>
+					<span class="mt-4 block text-left font-semibold">— Jacques Chirac, Président de la République</span>
+				</blockquote>
+				
+				</div>
+			</section> -->
+
+			<!-- <figure class="section -ml-4 -mr-4">
+				<div class="background w-full bg-white bg-top bg-cover contrast-125 bg-gray-900 relative" style="background-image:url('img/this/1/_f2_8772.jpg');">
+					<div class="container px-4 py-4 max-w-2xl absolute bottom-4">
+						<h1 class="text-3xl md:text-4xl text-white font-semibold">Le drug testing, comment ça marche?</h1>
+					</div>
+				</div>
+				<figcaption class="py-2 px-4 max-w-2xl text-xs">Le drug testing, comment ça marche?</figcaption>
+			</figure> -->
+
+			<!-- <figure>
+				<div class="container py-4 max-w-6xl">
+				<div class="w-full">
+					<img src="img/this/1/_f2_8772.jpg" alt="">
+					<figcaption class="py-2 text-xs">Bloc image calé entre gull width la colonne de texte</figcaption>
+				</div>
+			</figure> -->
+
+			<!-- <figure class="-ml-4 -mr-4">
+				<div class="w-full">
+					<img src="img/this/1/_f2_8790.jpg" alt="">
+					<figcaption class="py-2 text-xs px-4">Bloc image full largeur</figcaption>
+				</div>
+			</figure> -->
+
+			<!-- CHAPITRE 1 -->
+			<section>
+				<div class="container py-4 max-w-2xl">
+					<div class="container authors flex py-6 border-y border-slate-400 mt-8 md:mt-16 mb-8 md:mb-12">
+						<div class="author w-full">
+								<div class="align-text-bottom text-sm md:text-base">
+									<span class="inline-block font-extrabold uppercase">Chapitre I — Chez le consommateur en chaussettes blanches</span>
+									<!-- <span class="inline-block">Texte</span> -->
+								</div>
+						</div>
+					</div>
+					<!-- <h3 class="text-3xl font-semibold mb-6">Chapitre I — Chez le consommateur en chaussettes blanches</h3> -->
+					<p class="lettrine text-lg font-light mb-6">Je mets mon nez au-dessus d’un sachet de blanche un peu jaune. Sébastien* trouve qu’elle sent l’essence, la poudre. Il veut la faire analyser. Comme ses cristaux de MDMA, substance active de l’ecstasy, qu’il a l’habitude de parachuter dans sa gorge en compagnie de ses deux amoureuses. Être <i>high</i> pour s’envoyer en l’air, en trouple. Un voyage, mais en respectant les consignes de sécurité. Destination: consommation responsable. 
+					</p>
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mb-6">
+						<div class="pt-4 grid gap-4 md:grid-cols-3">
+							<div class="">
+								<img src="img/this/1/_f2_8569.jpg" alt="">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+							<div class="">
+								<img src="img/this/1/_f2_8699.jpg" alt="">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+							<div class="">
+								<img src="img/this/1/_f2_8905.jpg" alt="">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+						</div>
+						<figcaption class="py-2 text-xs">Parachute n.m.: dispositif utilisé pour consommer de la MDMA en emballant les cristaux de drogue dans une feuille de papier à rouler.
+						</figcaption>
+					</figure> 
+					<p class="text-lg font-light mb-6">Il a donc rendez-vous dans deux heures dans les locaux du drug-checking du programme Nuit Blanche, à Genève. Là, il pourra déposer des petits morceaux de sa came anonymement, pour les faire tester gratuitement. Objectif: savoir si elle est dangereuse ou non. </p>
+					<!-- <figure class="w-4/12 mr-8 mb-4 float-left">
+						<img src="img/this/1/_f2_8595.jpg" alt="">
+						<figcaption class="py-2 text-xs">
+							Ici une légende en rapport avec un medaillon
+						</figcaption>
+					</figure> -->
+					<!-- <figure class="">
+						<div class="container py-4">
+							<div class="w-full">
+								<img src="img/this/1/_f2_8595.jpg" alt="">
+								<figcaption class="py-2 text-xs">image calé intérieur de la colonne de texte</figcaption>
+							</div>
+						</div>
+					</figure> -->
+					
+					<!-- <figure class="mb-6">
+						<div class="container py-4 max-w-xs md:max-w-sm">
+							<div class="w-full">
+								<img src="img/this/1/_f2_8790.jpg" alt="">
+								<figcaption class="py-2 text-xs">image calé intérieur de la colonne de texte</figcaption>
+							</div>
+						</div>
+					</figure> -->
+					<p class="text-lg font-light mb-6">De son appartement atypique du centre-ville, vous ne verrez que cette banale table blanche, un cendrier, une boite remplie de produits illicites et une petite balance «méga-précise». De lui, ses mains, son dos et ses chaussettes de «petit con». Ça n’arrange pas Valentin Flauraud, le photographe, mais Sébastien, universitaire de 24 ans, bien sous tous rapports, a peur d’être reconnu. Il fait partie des 1,1% d’hommes amateurs de blanche et des 0,8% de mâles avalant de la «D» en Suisse, selon une étude de 2017, la dernière en date (retrouvez tous les chiffres dans notre encadré). Consommation responsable ou pas, prendre des drogues est un acte illégal en Suisse, risqué pour la santé et très mal vu. </p>
+					<figure class="mb-6">
+						<div class="container py-4 max-w-xs md:max-w-sm">
+							<div class="w-full">
+								<img src="img/this/1/_f2_8790.jpg" alt="">
+								<figcaption class="py-2 text-xs">Sébastien a fini à l’hôpital après avoir trop sniffé.
+								</figcaption>
+							</div>
+						</div>
+					</figure>
+					<p class="text-lg font-light mb-6">«Je ne suis presque plus dedans. En fait, j’ai eu un déclic il y a six mois. Après avoir trop sniffé, je me suis éteint, j’ai dormi 36 heures. Je me suis réveillé, j’étais desséché, complètement déshydraté. J’ai fini à l’hôpital, sous perfusion. Et je me suis dit qu’il fallait que ça cesse, que j’allais finir par mourir si je continuais comme ça.» «Comme ça», c’est se faire des traits de «C», seul chez lui, au lieu de sortir avec ses potes. C’est aussi dépenser jusqu’à 2400 francs en quatre mois, comme ça.
+					</p>
+					<figure class="float-right">
+						<div class="container py-4">
+							<div class="w-full">
+								<img src="img/this/1/_f2_8772.jpg" alt="">
+								<figcaption class="py-2 text-xs">Sébastien se livre: «La dernière drogue que je prends, c’est la MDMA, et de manière réfléchie, si je suis dans un bon mood.»</figcaption>
+							</div>
+						</div>
+					</figure>
+					<p class="text-lg font-light mb-6">«La C, t’en prends une fois et tu tombes dedans sans t’en rendre compte. T’en veux toujours plus. La dernière drogue que je prends, c’est la MDMA, et de manière réfléchie, si je suis dans un bon mood et bien dans mes baskets, et jamais sur un coup de tête. En teuf ou au moment de faire l’amour. Ça te fait te sentir <i>open, free</i>, en osmose avec les autres, tous les complexes que tu peux avoir, sur ton corps, tes bourrelets, disparaissent. C’est désinhibant.» Mais pas sans danger, notamment pour le cerveau. 
+					</p>
+					
+					<p class="text-lg font-light mb-6">Comme souvent, c’est la dose qui fait le poison et… les problèmes d’érection. «Si j’en prends un petit peu, je peux planter des clous dans des murs. Pendant une heure et demie, tu peux t’éclater parce que le point de jouissance est plus difficile à atteindre. Mais si t’en ingères trop, c’est foutu, t’es plus là. Et puis, t’augmentes ta descente: le lendemain et les jours suivants, t’es vraiment en grosse dépression.»
+					</p>
+					
+					<figure class="mb-6">
+						<div class="container py-4 max-w-xs md:max-w-sm">
+							<div class="w-full">
+								<img src="img/this/1/_f2_8764.jpg" alt="">
+								<figcaption class="py-2 text-xs">Pour éviter les grosses descentes et les problèmes d’érection, il vaut mieux peser sa came, au milligramme près.</figcaption>
+							</div>
+						</div>
+					</figure>
+					<p class="text-lg font-light mb-6">D’où la balance «méga-précise» — «pour moi, c’est 80 mg, pas plus» — et l’importance de connaître la force de sa came. Pas facile quand on est obligé de se fournir sur le marché noir — loin, le nutri-score pour vous aider à choisir. Et même quand on connait son dealer, la qualité peut varier d’un trip au prochain. </p>
+					<!-- <figure>
+						<div class="container py-4 max-w-2xl">
+							<div class="w-full">
+								<img src="img/this/1/_f2_8764.jpg" alt="">
+								<figcaption class="py-2 text-xs">image calé intérieur de la colonne de texte</figcaption>
+							</div>
+						</div>
+					</figure> -->
+					
+					<p class="text-lg font-light mb-6">A Lausanne, un service de drug-checking a ouvert le 13 octobre 2022 (impossible d’y faire un reportage, le refus avait été sec). Pionnier en Suisse romande, le Canton de Genève a le sien depuis 2019 — sous l’égide de l’association Première Ligne, et de son action de réduction des risques en milieu festif, Nuit Blanche. Chaque lundi entre 17h et 20h, derrière la gare, il est possible d’aller déposer des fragments de dope pour les faire tester. 
+					</p>
+
+					<p class="text-lg font-light mb-6">Le dispositif est financé par l’Etat à travers un contrat de prestation de quatre ans. Au total, le Canton verse 2,7 millions par an à Première Ligne, qui chapeaute aussi le Quai 9, local de consommation et d’injection. Comme le Quai 9, le drug-checking de Nuit Blanche est destiné à la réduction des risques, l’un des quatre piliers de la politique suisse en matière de drogue, avec la répression, la prévention et la thérapie. 
+					</p>
+					<p class="text-lg font-light mb-6">C’est là que je suivrai Sébastien dans une trentaine de minutes. Le temps pour lui de raconter ses voyages sous LSD. «Trois ans de thérapie en une soirée, regarde, j’avais l’impression de pouvoir régler des conflits familiaux, j’ai tout dans ces cahiers. En micro-dosing, sous forme de ‘pshit’, c’est incroyable. Je ne savais par exemple plus jouer de la guitare, alors que j’en joue, mais je pouvais jouer du piano, alors que je n’en joue pas…»
+					</p>
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64">
+						<div class="pt-4 grid gap-4 md:grid-cols-2">
+							<div class="">
+								<img src="img/this/1/_f1_8577.jpg" alt="">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+							<div class="">
+								<img src="img/this/1/_f1_8597.jpg" alt="">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+						</div>
+						<figcaption class="py-2 text-xs mb-6">Lors de ses <i>trips</i> sous LSD, Sébastien plonge dans son inconscient, dessine, écrit: «Trois ans de thérapie en une soirée.»</figcaption>
+					</figure> 
+					<p class="text-lg font-light mb-6">Passer des nuits blanches, c’est relativement souvent. Passer à Nuit Blanche, moins. Ce sera sa troisième fois. «Si on me dit qu’il y a du fentanyl, des traces d’héroïne, de la kétamine dedans, c’est hors de question que j’y touche. Mais, dans les faits, je n’ai jamais renoncé après un passage à Nuit Blanche, c’était toujours ok. L’important, c’est de pouvoir faire confiance à ce que tu t’envoies.»</p>
+					<p class="text-lg font-light mb-6">L’étudiant est pourtant critique face au drug-checking. «Pour un usager régulier, c’est bien. Mais je me demande si on n’incite pas des jeunes de 18 ans à continuer sur un mauvais chemin en leur disant que c’est safe. Quand t’es accro, ta phrase préférée, c’est: ‘La drogue, c’est mal. Surtout quand il n’y en a plus!’ Mais en réalité, plus t’en es loin, mieux tu te portes.»
+					</p>
+					<p class="text-lg font-light mb-6">Il est bientôt 20h30 ce 30 janvier. Sébastien met ses échantillons dans ses poches. Enfourche sa moto (vous ne la verrez pas non plus). Départ. 
+					</p>
+				</div>
+			</section>
+
+			<figure class="section -ml-4 -mr-4">
+				<div class="background w-full h-full bg-white bg-center bg-cover contrast-125 bg-gray-900 relative" style="background-image:url('img/this/2/_f1_8704.jpg');">
+					<!-- <div class="container px-4 py-4 max-w-2xl absolute bottom-4">
+						<h1 class="text-3xl md:text-4xl text-white font-semibold">Le drug testing, comment ça marche?</h1>
+					</div> -->
+				</div>
+				<!-- <figcaption class="py-2 px-4 max-w-2xl text-xs">Le drug testing, comment ça marche?</figcaption> -->
+			</figure>
+
+			<!-- <figure class="-ml-4 -mr-4">
+				<div class="w-full">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="py-2 text-xs px-4">Bloc image full largeur</figcaption>
+				</div>
+			</figure> -->
+
+			<section>
+				<div class="container py-4 max-w-2xl">
+				<div class="container authors flex py-6 border-y border-slate-400 mt-8 md:mt-16 mb-8 md:mb-12">
+					<div class="author w-full">
+							<div class="align-text-bottom text-sm md:text-base">
+								<span class="inline-block font-extrabold uppercase">Chapitre II — Dans les locaux de Nuit Blanche</span>
+								<!-- <span class="inline-block">Texte</span> -->
+							</div>
+					</div>
+				</div>
+				<!-- <h3 class="text-3xl font-semibold mb-6">Chapitre II — Dans les locaux de Nuit Blanche</h3> -->
+				<p class="lettrine text-lg font-light mb-6">C’est la première fois que le drug-checking ouvre ses portes à la presse durant sa permanence du lundi. Enfin, presque durant sa permanence du lundi. Pour ne pas éveiller de soupçons chez les utilisatrices et utilisateurs, rendez-vous nous a été donné après la fin du service, parfois victime de son succès — environ 500 analyses par an.
+				</p>
+				<!-- <figure class="w-4/12 mr-8 mb-4 float-left">
+					<img src="img/___medaillon.jpeg" alt="">
+					<figcaption class="py-2 text-xs">
+						Ici une légende en rapport avec un medaillon
+					</figcaption>
+				</figure> -->
+				<figure class="-mx-0 lg:-mx-32 xl:-mx-64">
+					<div class="pt-4 grid gap-4 md:grid-cols-2">
+						<div class="">
+							<img src="img/this/2/_f2_9028.jpg" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+						<div class="">
+							<img src="img/this/2/_f2_8914.jpg" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+					</div>
+					<figcaption class="py-2 text-xs mb-6">Dans les locaux de Nuit Blanche, l’anonymat est strictement roi et les murs chuchotent.</figcaption>
+				</figure> 
+				<p class="text-lg font-light mb-6">L’anonymat y est strictement roi. Celui de la plupart des collaborateurs — des travailleurs sociaux et des infirmiers de formation — aussi. Vous ne rencontrerez qu’un visage et un bout d’une grande barbe. Celui de David Perrin et celle de Stéphane M., coresponsables. 
+				</p>
+				
+				<figure class="mb-6">
+					<div class="container py-4 max-w-xs md:max-w-sm">
+						<div class="w-full">
+							<img src="img/this/2/_f1_8763.jpg" alt="">
+							<figcaption class="py-2 text-xs">Ce lundi soir de permanence, David Perrin est à l’accueil.</figcaption>
+						</div>
+					</div>
+				</figure>
+				<p class="text-lg font-light mb-6">Même les murs chuchotent: «Ce que vous voyez ici, prière de le laisser ici», lit-on. «Ici», c’est une espèce de loft «très chill», à l’éclairage coloré et tamisé, bien underground quand même, peuplé de canapés allongés, secoué de techno, adouci de clins d’œil. </p>
+				<p class="text-lg font-light mb-6">Là, le dessin d’une molécule de 6-APB ou benzofury — aux effets comparables à la MDMA — drague les passoires et la boule à thé suspendues à la cuisine. C’est déjà la descente. En bas des escaliers, un livre pour «apprendre à gérer». Des capotes pour apprendre à aimer. Des flyers pour s’informer, un disque de stationnement pour se garer. 
+
+				</p>
+				<p class="text-lg font-light mb-6">Sébastien devra éclaircir bien des points. Ses échantillons deviendront une suite de numéros. Mais avant, David Perrin doit lui poser quelques questions, dans un coin isolé, sous la mezzanine. Le cadre est «non jugeant, bienveillant, rassurant».
+
+				</p>
+				<blockquote class="mt-12 mb-10 border-l-8 bg-slate-50 p-8 block text-lg md:text-xl italic font-extrabold leading-normal">
+					<span class="opacity-70 block mb-4"><b class="not-italic underline">David Perrin</b> – Tu te souviens du pseudonyme que tu nous avais donné lors de ta première venue?</span>
+					<span class="opacity-50 block mb-4"><b class="not-italic underline">Sébastien</b> – Non… J’avais un peu «psychoté», la dernière fois. J’étais stressé.</span>
+					<span class="opacity-70 block mb-4">– C’est pas grave. Alors, l’entretien va se décliner en deux parties. La première correspond à un questionnaire national, mené dans tous les drug-checkings de Suisse. Nous le faisons une fois par an pour récolter des statistiques. Cela nous permet d’avoir, en échange d’une analyse gratuite, des informations sur les profils de consommation. Cela nous permet également de continuer à obtenir des financements. Tout est anonyme et confidentiel, on saura juste que t’es un homme de 24 ans. Ta MDMA, tu l’as achetée où? Dans la rue, à travers des connaissances, en club, sur internet ou encore ailleurs? 
+					</span>
+					<span class="opacity-50 block mb-4">– Je me fournis toujours au même endroit.
+					</span>
+					<span class="opacity-70 block mb-4">– Tu peux me dire toutes les substances que t’as consommées au moins une fois dans ta vie?
+					</span>
+					<span class="opacity-50 block mb-4">– Tabac, alcool, cannabis, CBD, MDMA, coke, LSD, speed, kétamine, une seule fois. Poppers, gaz hilarant, Xanax, Temesta, sur ordonnance.
+					</span>
+					<span class="opacity-70 block mb-4">– Et au cours des 12 derniers mois?
+					</span>
+					<span class="opacity-50 block mb-4">– Tabac, alcool, MDMA, coke, kéta, LSD, speed et gaz hilarant.
+					</span>
+					<span class="opacity-70 block mb-4">– Dans les 30 derniers jours?</span>
+					<span class="opacity-50 block mb-4">– Tabac, alcool, cannabis et MDMA. 
+					</span>
+					<span class="opacity-70 block">– T’as déjà fait des <i>bad trips</i>, eu des grosses descentes ou vécu d’autres problèmes à court ou long terme avec les substances?</span>
+				</blockquote>
+
+				<figure class="-mx-0 lg:-mx-32 xl:-mx-64">
+					<div class="pt-4 grid gap-4 md:grid-cols-2">
+						<div class="">
+							<img src="img/this/2/_f2_9076.jpg" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+						<div class="">
+							<img src="img/this/2/_f1_8613.jpg" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+					</div>
+					<figcaption class="py-2 text-xs mb-6">L’entretien permet à Sébastien de poser toutes ses questions, avant de repartir «plus conscient».
+					</figcaption>
+				</figure> 
+
+				<p class="text-lg font-light mb-6">Les minutes passent, Sébastien s’ouvre. Des rires s’évadent parfois.</p>
+
+				<blockquote class="mt-12 mb-10 border-l-8 bg-slate-50 p-8 block text-lg md:text-xl italic font-extrabold leading-normal">
+					<span class="opacity-50 block mb-4">– Je n’ai jamais fait de <i>bad trip</i>, mais j’ai déjà été déprimé et eu des baisses de moral les jours qui ont suivi. Des problèmes de sommeil chroniques, des attaques de panique, quelques fois. Mais aujourd’hui, la MDMA, c’est en toutes petites doses…
+					</span>
+					<span class="opacity-70 block mb-4">– Connais-tu les dosages pour la MDMA? Pour les hommes, on parle de 1,5 mg par kilo. C’est-à-dire que si tu pèses 80 kg, ta dose, c’est 120 mg. Pour les femmes, c’est 1,3 mg par kilo. Au-delà, t’es en surdosage, car la dose est considérée comme neurotoxique. La fréquence de consommation est également importante. 
+					</span>
+					<span class="opacity-50 block mb-4">– J’ai aussi fait un séjour à l’hôpital après avoir pris de la coke. Je m’étais réveillé 36 heures plus tard, complètement déshydraté. J’ai fini sous perf.
+					</span>
+					
+				</blockquote>
+
+				<p class="text-lg font-light mb-6">
+					Une discussion s’engage sur ce qu’il aimerait changer ou non, sur ses besoins. 230511, 230512: les échantillons sont scellés et numérotés. Ils rejoindront les dix autres dans une enveloppe, qui sera scellée, elle aussi, et envoyée au laboratoire toxicologique des Hôpitaux universitaires de Genève (HUG). Dans le plus grand secret: pour des raisons de sécurité, nous n’avons pas été autorisés à suivre le transporteur. </p>
+
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mb-6">
+						<div class="pt-4 grid gap-4 md:grid-cols-3">
+							<div class="">
+								<img src="img/this/2/_f2_9188.jpg" alt="">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+							<div class="">
+								<img src="img/this/2/_f2_8942.jpg" alt="">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+							<div class="">
+								<img src="img/this/2/_f2_9233.jpg" alt="">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+						</div>
+						<figcaption class="py-2 text-xs">Les échantillons sont numérotés, scellés, placés dans une enveloppe et envoyé au laboratoire des Hôpitaux universitaires de Genève. Pour des raisons de sécurité, nous n’avons pas pu suivre le transport.</figcaption>
+					</figure> 
+
+				<blockquote class="mt-12 mb-10 border-l-8 bg-slate-50 p-8 block text-lg md:text-xl italic font-extrabold leading-normal">
+					<span class="opacity-70 block mb-4">– Tu l’as achetée combien, ta MDMA?</span>
+					<span class="opacity-50 block mb-4">– 70 francs le gramme.</span>
+					<span class="opacity-70 block mb-4">– Et la cocaïne de ton ami? Tu sais que normalement, il aurait fallu qu’il vienne en personne. Tu penses aussi la consommer? Dans ce cas, je peux aussi prendre cet échantillon. Donc, il l’a payée combien? </span>
+					<span class="opacity-50 block mb-4">– 40 francs le gramme. C’est vraiment pas cher, normalement, c’est 60 le gramme, donc ça nous inquiète un peu, mon pote et moi. Elle est aussi très jaune et sent la benzine. Pour la coke, c’est quoi les dosages, en fait? 
+					</span>
+					<span class="opacity-70 block mb-4">– C’est différent pour chaque personne et ça dépend du mode de consommation, si c’est en snif ou en injection. Il n’y a pas vraiment de dose létale déterminée. Mais une grosse consommation entraîne des problèmes de santé et des effets sur le psychisme. La dépendance est aussi très forte, un fort craving (ndlr: l'envie d'en reprendre). Sous coke, on a un sentiment de surpuissance et on a donc l’impression qu’on peut maîtriser la substance, alors que pas du tout. Et tu connais les effets de son interaction avec alcool? Il est assez dangereux parce qu’avec l’association de ces deux substances, le foie secrète du cocaéthylène, un métabolite neurotoxique.
+					</span>
+				</blockquote>
+
+				<p class="text-lg font-light mb-6">
+					Ravi d’avoir pu poser ses questions, précises, Sébastien s’en va. Un peu plus «conscient». L’occasion pour moi d’échanger avec David Perrin. Il restera très secret sur son parcours personnel ou sur ses expériences les plus marquantes dans ces locaux. Mais sera plus volubile sur l’utilité du drug-checking, cette approche «novatrice».
+				</p>
+
+				<p class="text-lg font-light mb-6">
+					«Actuellement, sur le marché, il y a énormément de produits coupés. Et les effets peuvent être violents. Nous ne sommes pas là pour juger ou pour dissuader, mais pour réduire les risques.» Leitmotiv: «Tu consommes, tu t’informes». 
+
+
+				</p>
+				<figure class="float-right">
+					<div class="container py-4">
+						<div class="w-full">
+							<img src="img/this/2/_f2_9042.jpg" alt="">
+							<figcaption class="py-2 text-xs">Au mur, de l’humour et de la prévention sur fond acidulé.</figcaption>
+						</div>
+					</div>
+				</figure>
+				<p class="text-lg font-light mb-6">
+					Sur le <a href="https://nuit-blanche.ch/warning/nuitblanche.html" target="_blank">site internet de Nuit Blanche</a>, des alertes — venant aussi des drug-checkings bernois, zurichois, bâlois, lucernois ou biennois — sont diffusées régulièrement, photos et conseils à l’appui. Par exemple, pour cette pilule d’ecstasy «Rolls Royce» hautement dosée.
+
+				</p>
+				<p class="text-lg font-light mb-6">
+					«Nous donnons des indications objectives, sur les risques, mais prenons aussi en compte les bénéfices. Ensuite, c’est à la personne de décider ce qu’elle en fait. Nous intervenons aussi en milieu festif, en club, dans les festivals. Et nous faisons de la consultation en ligne, avons un canal de discussion sur Discord, que nous modérons, sur Safezone ou à travers l’adresse e-mail unequestion@nuit-blanche.ch.» «Nous», ce sont les employés (cinq fixes et huit ou neuf payés à l’heure) de Nuit Blanche, qui font aussi un travail de réduction des risques en milieu festif.
+
+				</p>
+				<p class="text-lg font-light mb-6">
+					Il cite au passage <a href="https://www.bag.admin.ch/bag/fr/home/das-bag/aktuell/medienmitteilungen.msg-id-82431.html" target="_blank">une étude de l’Office fédéral de la santé publique, datée de février 2021</a>: le drug-checking a pour résultat de réduire non seulement les risques, mais aussi la défonce. Deux tiers «des personnes interrogées ont indiqué consommer moins de substances dangereuses et 45% ont déclaré consommer moins de substances à la suite d’une analyse», écrit l’OFSP.
+
+				</p>
+				<figure class="float-right">
+					<div class="container py-4">
+						<div class="w-full">
+							<img src="img/this/2/_f2_9094.jpg" alt="">
+							<figcaption class="py-2 text-xs">Apprendre à gérer sa consommation et les jours qui suivent: la clef pour réduire les risques.</figcaption>
+						</div>
+					</div>
+				</figure>
+				<p class="text-lg font-light mb-6">
+					Analyser régulièrement les sachets disponibles à tous les coins de rue permet aussi de garder un œil sur le marché noir. «Si des produits dangereux avec un risque létal devaient soudainement apparaître dans des pilules d’ecstasy, par exemple, nous le saurions rapidement. Dans un cas comme celui-ci, une alerte serait lancée, et les autorités ainsi que les services spécialisés seraient avertis. Je ne suis pas autorisé à vous décrire le protocole précis.»
+				</p>
+				<p class="text-lg font-light mb-6">
+					Il est passé 23 heures. Demain matin, j’ai rendez-vous avec une enveloppe remplie d’interdits au laboratoire des HUG. 
+
+				</p>
+				</div>
+			</section>
+
+			<figure class="section -ml-4 -mr-4">
+				<div class="background w-full h-full bg-white bg-bottom bg-cover contrast-125 bg-gray-900 relative" style="background-image:url('img/this/3/_f2_9311.jpg');">
+					<!-- <div class="container px-4 py-4 max-w-2xl absolute bottom-4">
+						<h1 class="text-3xl md:text-4xl text-white font-semibold">Le drug testing, comment ça marche?</h1>
+					</div> -->
+				</div>
+				<!-- <figcaption class="py-2 px-4 max-w-2xl text-xs">Le drug testing, comment ça marche?</figcaption> -->
+			</figure>
+
+			<!-- <figure class="-ml-4 -mr-4">
+				<div class="w-full">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="py-2 text-xs px-4">Bloc image full largeur</figcaption>
+				</div>
+			</figure> -->
+
+			<section>
+				<div class="container py-4 max-w-2xl">
+					<div class="container authors flex py-6 border-y border-slate-400 mt-8 md:mt-16 mb-8 md:mb-12">
+						<div class="author w-full">
+								<div class="align-text-bottom text-sm md:text-base">
+									<span class="inline-block font-extrabold uppercase">Chapitre III — Au labo des HUG, faire analyser la blanche</span>
+									<!-- <span class="inline-block">Texte</span> -->
+								</div>
+						</div>
+					</div>
+				<!-- <h3 class="text-3xl font-semibold mb-6">Chapitre III — Aux labo des HUG, faire analyser la blanche</h3> -->
+				<p class="lettrine text-lg font-light mb-6">Il est 10h23, ce mardi 31 janvier. Le courrier arrive sur la table de Christèle Widmer, responsable adjointe de l’Unité de toxicologie et de chimie forensiques du Centre universitaire romand de médecine légale, dont le site genevois dépend des HUG. 
+
+				</p>
+				<figure class="">
+					<div class="pt-4 grid gap-4 md:grid-cols-2">
+						<div class="">
+							<img src="img/this/3/_f2_9771.jpg" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+						<div class="">
+							<img src="img/this/3/_f2_9662.jpg" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+					</div>
+					<figcaption class="py-2 text-xs mb-6">La chimiste Christèle Widmer (à gauche) et la laborantine Françoise Iatropoulos-Jollien mènent les analyses tous les mardis.</figcaption>
+				</figure> 
+				<!-- <figure class="w-4/12 mr-8 mb-4 float-left">
+					<img src="img/___medaillon.jpeg" alt="">
+					<figcaption class="py-2 text-xs">
+						Ici une légende en rapport avec un medaillon
+					</figcaption>
+				</figure> -->
+				<p class="text-lg font-light mb-6">La laborantine Françoise Iatropoulos-Jollien commence toujours par photographier la marchandise. «C’est vrai qu’elle est bien jaune, cette poudre de cocaïne. On n’en a pas l’habitude.» Puis, dans une cabine en verre, elle pèse, pile au mortier, avant de se saisir d’une paille bleue. Pour transférer les poudres dans une fiole en verre, ensuite diluées avec du liquide de mélange et passées aux ultrasons pendant un quart d’heure dans la salle d’à côté. 
+				</p>
+				<p class="text-lg font-light mb-6">Chaque analyse coûte 100 francs. «Pour Nuit Blanche, on fait deux analyses distinctes, développe Christèle Widmer. On va doser la ou les substances annoncées, c’est l’aspect quantitatif, et on va identifier les substances de coupage ou toute autre substance présente non désirée, c’est l’aspect qualitatif.»
+
+				</p>
+				<figure class="-mx-0 lg:-mx-32 xl:-mx-64">
+					<div class="container py-4">
+						<div class="w-full">
+							<img src="img/this/3/_f1_8922.jpg" alt="">
+						</div>
+					</div>
+				</figure>
+				<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mb-6">
+					<div class="grid gap-4 md:grid-cols-3">
+						<div class="">
+							<img src="img/this/3/_f2_9467.jpg" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+						<div class="">
+							<img src="img/this/3/_f2_9530.jpg" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+						<div class="">
+							<img src="img/this/3/_f2_9548.jpg" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+					</div>
+					<figcaption class="py-2 text-xs">Photographier les échantillons, peser puis piler les substances au mortier, avant de les diluer et de les comparer aux drogues de référence: chaque étape compte.</figcaption>
+				</figure> 
+				<p class="text-lg font-light mb-6">Attention, ça devient un peu barbare. Deux appareils de chromatographie liés à des spectromètres de masse  — dont la valeur peut atteindre 500’000 francs — comparent ensuite les petits flacons préparés par la technicienne à d’autres, contenant les molécules de référence, seize au total. Molécules de référence fabriquées et fournies par des entreprises de chimie, dont les prix sont plus élevés que sur le marché noir. 
+				</p>
+				<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mb-6">
+					<div class="pt-4 grid gap-4 md:grid-cols-2">
+						<div class="">
+							<img src="img/this/3/_f2_9607.jpg" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+						<div class="">
+							<img src="img/this/3/_f2_9613.jpg" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+					</div>
+					<figcaption class="py-2 text-xs">Les fioles sont mangées par les machines.</figcaption>
+				</figure> 
+				<p class="text-lg font-light mb-6">La technique d’analyse est ultra-précise, bien plus que le «stylo» que le drug-checking vaudois utilise pour scanner le matos. «Avec cet outil développé par l’Université de Lausanne, on a des résultats instantanés, mais il n’est pas possible d’identifier tous les produits de coupe», exemplifie Christèle Widmer.
+				</p>
+				<figure>
+					<div class="container py-4">
+						<div class="w-full">
+							<img src="img/this/3/_f2_9733.jpg" alt="">
+						</div>
+						<figcaption class="py-2 text-xs">Les résultats jaillissent sur les écrans.</figcaption>
+					</div>
+				</figure>
+
+				<p class="text-lg font-light mb-6">De son poste de travail, celle qui travaille aussi avec les polices de Genève, Neuchâtel et du Jura voit l’évolution du marché en Suisse. «Lors des analyses effectuées pour la circulation routière, la consommation de cannabis et d’alcool, puis de cocaïne, prédomine. Vient ensuite la consommation des médicaments comme les anxiolytiques, les benzodiazépines ou les neuroleptiques. Le public du drug-checking est différent, on est plus dans un contexte festif ou de chemsex (ndlr: accouplement des mots «chemicals» et «sex» pour désigner l’utilisation de drogues pendant les relations sexuelles pour augmenter le plaisir, voire la performance).»
+				</p>
+
+				<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mb-6">
+					<div class="pt-4 grid gap-4 md:grid-cols-2">
+						<div class="">
+							<img src="img/this/graph1.png" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+						<div class="">
+							<img src="img/this/graph2.png" alt="">
+							<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+						</div>
+					</div>
+					<figcaption class="py-2 text-xs">Attention, la consommation de drogues illégales peut être sous-estimée dans les études. (Sources: CoRolAR 2016 et 2017/<a href="https://www.addictionsuisse.ch/faits-et-chiffres/" target="_blank" class="font-extrabold underline">Addiction Suisse</a>)
+					</figcaption>
+				</figure>
+
+				<p class="text-lg font-light mb-6">En 2022, sur 461 échantillons venus de Nuit Blanche, un peu plus d’un tiers contenait de la cocaïne, 30% étaient de l’ecstasy en pilule ou de la MDMA en cristaux, 13% du LSD ou des hallucinogènes. Suivent l’héro (9%), le cannabis (7%) et la kétamine (7%). <a href="https://www.blick.ch/fr/news/suisse/entre-coca-ne-et-amphetamines-une-nouvelle-drogue-inquietante-setend-en-terres-romandes-id18098424.html" target="_blank">La 3-MMC — nouvelle drogue de synthèse ressemblant aux amphétamines, mais moins chère</a> — ou le 2C-B, hallucinogène souvent vendu comme de l’ecstasy, pointent le bout de leur nez. Deux pour cent ne comportaient aucun stupéfiant et dans 7% des cas, le résultat ne correspondait pas du tout à ce que la personne pensait s’être procuré. 
+				</p>
+
+				<p class="text-lg font-light mb-6">«Ces dernières années, la kétamine, qui est en fait un anesthésiant, prend son essor. Le LSD a toujours été assez présent sous forme de buvard et maintenant de plus en plus sous forme de micro-dosing, en spray.» Christèle Widmer connait bien aussi les risques liés à chaque drogue — les fortes dépendances au crack, les problèmes cardiaques générés par la «neige» sur le moyen terme ou les overdoses à l’héroïne. 
+
+				</p>
+
+				<p class="text-lg font-light mb-6">En boîte de nuit ou en rave, gare aux mélanges, surtout. «L’association est particulièrement dangereuse. Par exemple, si on combine une amphétamine de synthèse comme la 3-MMC avec d’autres psychostimulants ou de l’alcool.»
+
+				</p>
+
+				<p class="text-lg font-light mb-6">Au labo, à la fin du processus, tous les psychotropes terminent leur vie dans un coffre-fort au bout du couloir, en attendant d’être détruits. Les résultats, eux, finissent sur des écrans, avant d’être transmis aux consommatrices et consommateurs deux jours plus tard, le jeudi, dans les locaux de Nuit Blanche ou par téléphone. Sébastien attendra le lundi 6 février et son retour de son week-end devant de grosses enceintes crachant de la techno, à l’étranger. Moi aussi.
+
+				</p>
+				</div>
+			</section>
+
+			<figure class="section -ml-4 -mr-4">
+				<div class="background w-full h-full bg-white bg-bottom bg-cover contrast-125 bg-gray-900 relative" style="background-image:url('img/this/4/_f1_5006.jpg');">
+					<!-- <div class="container px-4 py-4 max-w-2xl absolute bottom-4">
+						<h1 class="text-3xl md:text-4xl text-white font-semibold">Le drug testing, comment ça marche?</h1>
+					</div> -->
+				</div>
+				<!-- <figcaption class="py-2 px-4 max-w-2xl text-xs">Le drug testing, comment ça marche?</figcaption> -->
+			</figure>
+
+			<!-- <figure class="-ml-4 -mr-4">
+				<div class="w-full">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="py-2 text-xs px-4">Bloc image full largeur</figcaption>
+				</div>
+			</figure> -->
+
+			<section class="pb-36">
+				<div class="container py-4 max-w-2xl">
+					<div class="container authors flex py-6 border-y border-slate-400 mt-8 md:mt-16 mb-8 md:mb-12">
+						<div class="author w-full">
+								<div class="align-text-bottom text-sm md:text-base">
+									<span class="inline-block font-extrabold uppercase">Chapitre IV — Alors, elle est <i>safe</i>, cette poudre pas très blanche?</span>
+									<!-- <span class="inline-block">Texte</span> -->
+								</div>
+						</div>
+					</div>
+					<!-- <h3 class="text-3xl font-semibold mb-6">Chapitre IV — Alors, elle est <i>safe</i>, cette poudre pas très blanche?</h3> -->
+					<p class="lettrine text-lg font-light mb-6">Un nouveau lundi, un nouveau jour de permanence pour le drug-checking de Nuit Blanche. Il est 16h, Sébastien est un poil en retard. Stéphane M. l’attend pour lui transmettre les résultats, avant que tout le monde débarque dès 17h. Une question d’anonymat, encore: «Nous recevons des personnes qui consomment de la cocaïne et qui sont parfois dans une forme de paranoïa et ils voient la police partout.» 
+					</p>
+					
+					
+					<p class="text-lg font-light mb-6">16h15. L’entretien peut commencer. Par un <i>disclaimer</i>. L’intervenant lit une petite carte orange. «Je dois te dire qu’il n’y a pas de consommation sans risques. L’analyse te renseigne sur le dosage et la composition des substances. Le résultat n’est pas un label de qualité ou une forme de validation de ta consommation. Les risques ne sont pas seulement dépendants de la substance, mais également de ton état psychique et physique, et de la façon dont tu consommes.»
+
+					</p>
+					<figure>
+						<div class="container py-4">
+							<div class="w-full">
+								<img src="img/this/4/_f1_4994.jpg" alt="">
+							</div>
+							<figcaption class="py-2 text-xs">«L’Etat de Genève, le laboratoire et l’association Première Ligne se dégagent de toute responsabilité liée à la consommation», avertit la carte orange.</figcaption>
+						</div>
+					</figure>
+					<p class="text-lg font-light mb-6">Stéphane M. lui parlera d’ailleurs plus tard du fameux <i>drug-set-setting</i>. «Enfin, l’Etat de Genève, le laboratoire et l’association Première Ligne se dégagent de toute responsabilité liée à la consommation. Est-ce tout bon, pour toi?»
+
+					</p>
+					<p class="text-lg font-light mb-6">Ok pour Sébastien. Alors, que disent les analyses?</p>
+					<blockquote class="mt-12 mb-10 border-l-8 bg-slate-50 p-8 block text-lg md:text-xl italic font-extrabold leading-normal">
+						<span class="opacity-70 block mb-4"><b class="not-italic underline">Stéphane</b> – Pour tes cristaux de MDMA, la pureté est de 52%. Ce n’est pas très élevé. En moyenne, c’est plutôt 70%. Tu fais environ 65 kg, donc tu peux prendre 97,5 mg, en deux fois, en soirée. Au-delà, à partir de 120 mg de pure, tu risquerais d’être dans un état dépressif en début de semaine.</span>
+						<span class="opacity-50 block mb-4"><b class="not-italic underline">Sébastien</b> – C’est à peu près de ce que j’ai avalé ce week-end, en teuf. Quand c’est pour du sexe, je prends moins.</span>
+						<span class="opacity-70 block mb-4">– Et tu t’es bien hydraté? C’est très important.</span>
+						<span class="opacity-50 block mb-4">– Oui, et j’ai mangé du potassium, des bananes.</span>
+
+						<span class="opacity-70 block mb-4">– Ouais, c’est très bien de préparer son trip. Il faut aussi être dans un bon drug-set-setting. C’est-à-dire connaître les effets potentiels, le dosage, être bien psychologiquement, être dans un endroit où tu te sens à l’aise et être bien entouré, de gens que tu connais bien. Des fois, il vaut mieux refuser pour éviter les grosses descentes. Et après coup, il faut bien t’hydrater, te reposer, voir du monde plutôt que de rester chez toi. Mange aussi des aliments précurseurs de sérotonine, comme des fruits bien vitaminés, des bananes. En fait, la MDMA va libérer beaucoup de sérotonine, l’hormone du bonheur, et donc faire baisser son niveau. Par conséquent, il faut aider ton corps à en générer un peu plus pour ne pas trop déprimer.</span>
+						<span class="opacity-50 block mb-4">– Je le fais, je mange aussi des barres protéinées. Et j’espace mes prises de trois mois, en général.</span>
+						<span class="opacity-70 block mb-4">– Minimum six semaines, oui! Après six semaines, ton corps aura pu se remettre de cette expérience. Et si tu dérapes et ne peux plus t’en passer pour le sexe, tu sais où t’adresser?</span>
+						<span class="opacity-50 block mb-4">– J’ai un psy. Mais, pour moi, le sexe vient avant le stupéfiant. Je suis plus accro au sexe qu’à la MDMA.</span>
+					</blockquote>
+					
+					<p class="text-lg font-light mb-6">Et la coco un peu jaune, qui sent la benzine? Le mauvais pressentiment de Sébastien se vérifie-t-il?</p>
+
+					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mb-6">
+						<div class="pt-4 grid gap-4 md:grid-cols-2">
+							<div class="">
+								<img src="img/this/4/_f1_5075.jpg" alt="">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+							<div class="">
+								<img src="img/this/4/_f1_5130.jpg" alt="">
+								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
+							</div>
+						</div>
+						<figcaption class="py-2 text-xs">Stéphane M. donne encore quelques conseils à Sébastien: bien se nettoyer le nez, avant et après. Utiliser du lubrifiant, avant et pendant.</figcaption>
+					</figure>
+
+					<blockquote class="mt-12 mb-10 border-l-8 bg-slate-50 p-8 block text-lg md:text-xl italic font-extrabold leading-normal">
+						<span class="opacity-70 block mb-4">– Là aussi, la qualité est moyenne. Elle est pure à 55%, seulement.</span>
+
+						<span class="opacity-50 block mb-4">– Normalement, on est à combien?</span>
+
+						<span class="opacity-70 block mb-4">– Habituellement, en Suisse, on est autour de 80%. Il y a 3% de levamisole dedans. Un médicament vétérinaire utilisé contre les vers qui peut entraîner des vomissements, des diarrhées et une diminution des défenses immunitaires. Dans cette quantité, selon la fréquence de consommation, ce n’est pas un composant vraiment dangereux. Par contre, c’est assez corrosif et ça peut empêcher la cicatrisation des narines. Le reste, c’est du sucre, et il y a aussi 3% de caféine. T’as besoin de matériel?</span>
+
+						<span class="opacity-50 block mb-4">– Je veux bien des pailles.</span>
+						<span class="opacity-70 block mb-4">– On a aussi du sérum physiologique, c’est bien de se nettoyer le nez, avant et après. Tu veux des préservatifs? Du lubrifiant? C’est important, parce que les muqueuses sèchent quand on est sous l’emprise de ses substances. T’as d’autres questions?</span>
+						<span class="opacity-50 block mb-4">– Non, on s’est tout dit. Merci!</span>
+					</blockquote>
+
+					<figure>
+						<div class="container py-4">
+							<div class="w-full">
+								<img src="img/this/4/_f1_5178.jpg" alt="">
+							</div>
+							<figcaption class="py-2 text-xs">Départ! Sébastien est attendu au travail. Un job d’étudiant tout à fait sérieux.</figcaption>
+						</div>
+					</figure>
+		
+					<p class="text-lg font-light mb-6">Sébastien et ses deux copines pourront s’aimer sous MDMA en toute connaissance de cause. Son pote, lui peut être rassuré: sa «Caroline» sent peut-être la station-service, mais elle n’est pas spécialement inflammable. Sébastien est attendu au travail. Un job d’étudiant tout à fait sérieux. Il remettra ses chaussettes de «petit con» à une autre occasion.</p>
+					<p class="text-lg font-light mb-6 italic">*Prénom d’emprunt</p>
+					
+				</div>
+			</section>
+
+			<!-- <figure>
+				<div class="w-full">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="py-2 text-xs">Bloc image calé sur la colonne de texte</figcaption>
+				</div>
+			</figure> -->
+
+			
+
+			<!-- <figure>
+				<div class="container py-4 max-w-xs md:max-w-sm">
+				<div class="w-full">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="py-2 text-xs">image calé intérieur de la colonne de texte</figcaption>
+				</div>
+			</figure> -->
+
+			
+
+			<!-- <figure>
+				<div class="container py-4 max-w-6xl">
+				<div class="w-full">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="py-2 text-xs">Bloc image calé entre gull width la colonne de texte</figcaption>
+				</div>
+			</figure> -->
+
+			<!-- <figure>
+				<div class="container px-12 py-4 w-full flex">
+				<div class="w-full">
+					<img src="img/placeholder.png" alt="">
+					<figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption>
+				</div>
+				</div>
+			</figure>-->
+
+			<!-- <figure>
+				<div class="container px-4 py-4 max-w-xs sm:max-w-md grid gap-4 grid-cols-2">
+					<div class="">
+						<img src="img/placeholder.png" alt="">
+						<figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption>
+					</div>
+					<div class="">
+						<img src="img/placeholder.png" alt="">
+						<figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption>
+					</div>
+				</div>
+			</figure>  -->
+		</div>
+
+		<footer class="container py-8 max-w-full relative">
+			<div class="w-80 top-1/2 left-1/2 -translate-x-2/4 -translate-y-2/4 absolute">
+				{{ block('credits') }}  
+			</div>
+		</footer> 
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		{# <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script> #}
+		<script src="js/vendor/modernizr-3.11.2.min.js"></script> 
+		<!-- <script src="js/plugins.js"></script> -->
+		<script src="js/header.js"></script>
+		<script src="js/main.js"></script>
+		<!-- <script src="js/headroom.min.js"></script> -->
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		 
+	</body>
+</html>

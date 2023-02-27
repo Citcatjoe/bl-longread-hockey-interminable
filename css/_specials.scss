@@ -1,0 +1,34 @@
+body 
+{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .4s;
+
+    &.is-visible
+    {
+        opacity: 1;
+        visibility: visible;
+        transition: all .4s;
+    }
+}
+
+.container
+{
+    margin: auto;
+}
+
+.overlay
+{
+    opacity: 0;
+    visibility: hidden;
+    transition: all .2s;
+
+    &.is-visible 
+    {
+        opacity: .5;
+        visibility: visible;
+        transition: all .2s;
+    }
+}
+
+
