@@ -1,10 +1,4 @@
 /*Gerillass mixins*/
-blockquote {
-  border-style: solid;
-  border-image: linear-gradient(to bottom, #d6f6ff, #ffb9d8) 1 100%;
-  border-right: 0;
-}
-
 .herogradient {
   background: linear-gradient(300deg, #ffb9d8, #e3a2f8, #9fc5ff, #d6f6ff);
   background-size: 180% 180%;
@@ -22,44 +16,34 @@ blockquote {
     background-position: 0% 50%;
   }
 }
-.hero .herochild {
-  height: 66vh;
+.hero {
+  height: 70vh;
 }
 @media (min-width: 768px) {
-  .hero .herochild {
-    height: auto;
+  .hero {
+    height: 85vh;
   }
 }
 
-.hero .background {
-  height: 60vh;
-}
-@media (min-width: 768px) {
-  .hero .background {
-    min-height: 85vh;
-  }
-}
-.hero .background.background-text {
-  height: auto;
-}
-@media (min-width: 768px) {
-  .hero .background.background-text {
-    min-height: 85vh;
-  }
-}
-
-.section .background {
+.title .background {
   height: auto;
   aspect-ratio: 14/9;
 }
 @media (min-width: 768px) {
-  .section .background {
+  .title .background {
     height: 85vh;
   }
 }
 
 h1 {
-  font-family: poppins;
+  font-family: bebas neue;
+  font-size: 100px !important;
+  line-height: 0.8;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 200px !important;
+  }
 }
 
 h2 {
@@ -67,7 +51,7 @@ h2 {
 }
 
 h3 {
-  font-family: poppins;
+  font-family: bebas neue;
 }
 
 p {
@@ -76,6 +60,9 @@ p {
 
 blockquote {
   font-family: poppins;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, #ff2727, #ffffff) 1 100%;
+  border-right: 0;
 }
 
 .lettrine:first-letter {
@@ -209,11 +196,245 @@ header.headroom--unpinned {
   background: blue;
 }
 
+.video-js {
+  background: transparent !important;
+}
+
+.video-wrapper video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero .video-wrapper video {
+  position: absolute;
+}
+
+.player1-dimensions, .player2-dimensions, .player3-dimensions, .player4-dimensions {
+  width: 100%;
+  height: 100%;
+}
+
+.herooverlay {
+  background: radial-gradient(ellipse at center, transparent 0%, black 100%);
+  opacity: 0.5;
+}
+
 footer {
   height: 100vh;
   background: #202124;
 }
 
+.scroller {
+  transition: all 1.2s;
+}
+.scroller.is-visible {
+  opacity: 1;
+  transition: all 1.2s;
+}
+
+.mouse {
+  background: #4e5559 linear-gradient(transparent 0%, transparent 50%, #ffffff 50%, #ffffff 100%);
+  position: relative;
+  width: 26px;
+  height: 44px;
+  border-radius: 100px;
+  background-size: 100% 200%;
+  animation: colorSlide 10s linear infinite, nudgeMouse 10s ease-out infinite;
+}
+.mouse:before, .mouse:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.mouse:before {
+  width: 24px;
+  height: 42px;
+  background-color: #202124;
+  border-radius: 100px;
+}
+.mouse:after {
+  background-color: #ffffff;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  animation: trackBallSlide 10s linear infinite;
+}
+
+@keyframes colorSlide {
+  0% {
+    background-position: 0% 100%;
+  }
+  20% {
+    background-position: 0% 0%;
+  }
+  21% {
+    background-color: #4e5559;
+  }
+  29.99% {
+    background-color: #ffffff;
+    background-position: 0% 0%;
+  }
+  30% {
+    background-color: #4e5559;
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 0% 0%;
+  }
+  51% {
+    background-color: #4e5559;
+  }
+  59% {
+    background-color: #ffffff;
+    background-position: 0% 0%;
+  }
+  60% {
+    background-color: #4e5559;
+    background-position: 0% 100%;
+  }
+  80% {
+    background-position: 0% 0%;
+  }
+  81% {
+    background-color: #4e5559;
+  }
+  90%, 100% {
+    background-color: #ffffff;
+  }
+}
+@keyframes trackBallSlide {
+  0% {
+    opacity: 1;
+    transform: scale(1) translateY(-10px);
+  }
+  6% {
+    opacity: 1;
+    transform: scale(0.9) translateY(2.5px);
+  }
+  14% {
+    opacity: 0;
+    transform: scale(0.2) translateY(20px);
+  }
+  15%, 19% {
+    opacity: 0;
+    transform: scale(0.2) translateY(-10px);
+  }
+  28%, 29.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-10px);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1) translateY(-10px);
+  }
+  36% {
+    opacity: 1;
+    transform: scale(0.9) translateY(2.5px);
+  }
+  44% {
+    opacity: 0;
+    transform: scale(0.2) translateY(20px);
+  }
+  45%, 49% {
+    opacity: 0;
+    transform: scale(0.2) translateY(-10px);
+  }
+  58%, 59.99% {
+    opacity: 1;
+    transform: scale(1) translateY(-10px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1) translateY(-10px);
+  }
+  66% {
+    opacity: 1;
+    transform: scale(0.9) translateY(2.5px);
+  }
+  74% {
+    opacity: 0;
+    transform: scale(0.2) translateY(20px);
+  }
+  75%, 79% {
+    opacity: 0;
+    transform: scale(0.2) translateY(-10px);
+  }
+  88%, 100% {
+    opacity: 1;
+    transform: scale(1) translateY(-10px);
+  }
+}
+@keyframes nudgeMouse {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(8px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(8px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+@keyframes nudgeText {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(2px);
+  }
+  30% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  60% {
+    transform: translateY(0);
+  }
+  80% {
+    transform: translateY(2px);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+@keyframes colorText {
+  21% {
+    color: #4e5559;
+  }
+  30% {
+    color: #ffffff;
+  }
+  51% {
+    color: #4e5559;
+  }
+  60% {
+    color: #ffffff;
+  }
+  81% {
+    color: #4e5559;
+  }
+  90% {
+    color: #ffffff;
+  }
+}
 body {
   opacity: 0;
   visibility: hidden;
@@ -238,4 +459,26 @@ body.is-visible {
   opacity: 0.5;
   visibility: visible;
   transition: all 0.2s;
+}
+
+.is-blurry {
+  filter: blur(8px);
+}
+
+.mobile-hidden {
+  display: none;
+}
+@media (min-width: 768px) {
+  .mobile-hidden {
+    display: block;
+  }
+}
+
+.desktop-hidden {
+  display: block;
+}
+@media (min-width: 768px) {
+  .desktop-hidden {
+    display: none;
+  }
 }

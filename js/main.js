@@ -1,5 +1,6 @@
 (function($){
 
+    window.scrollTo(0, 0);
 	// data = [
     //     { 
     //         title: 'titre 1',
@@ -21,9 +22,14 @@
     // }
     setTimeout(function() { 
         $('body').addClass('is-visible');
+        window.scrollTo(0, 0);
     }, 1000);
+
     
-
-	
-
+    videojs('player1', {autoplay: true}); 
+    videojs('player2', {autoplay: true}); 
+    videojs('player3', {autoplay: true}); 
+	videojs('player4', {autoplay: true}); 
+    
+  
 })(jQuery);

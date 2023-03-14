@@ -1,48 +1,17 @@
 
-  blockquote
-  {
-    //background: #d6f6ff;
-    //border-width: 5px;
-    border-style: solid;
-    border-image: 
-      linear-gradient(
-        to bottom, 
-        #d6f6ff, 
-        #ffb9d8
-      ) 1 100%;
-      border-right: 0;
-  }
+  
 
-html{
-    // background-image: linear-gradient(-90deg, #e46ba4, #d090ac, #b6afb4, #93cbbc);
-    // background-position: fixed;
-}
-body
-{
-    // background-image: linear-gradient(25deg, #e46ba4, #d090ac, #b6afb4, #93cbbc);
-    // background-position: fixed;
-    // background: transparent;
-}
+
 
 .herogradient
 {
     
-    // background-image: linear-gradient(-25deg, #ff9ecc, #ffe6f1, #f3e2ee, #b4ffeb);
-    // background: linear-gradient(300deg, #ff0070, #e2e8f1, #e2e8f1, #00c5ff);
+    
     background: linear-gradient(300deg, #ffb9d8, #e3a2f8, #9fc5ff, #d6f6ff);
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
 }
 
-.herogradient2
-{
-    
-    // background-image: linear-gradient(-25deg, #ff9ecc, #ffe6f1, #f3e2ee, #b4ffeb);
-    // background: linear-gradient(300deg, #ff0070, #e2e8f1, #e2e8f1, #00c5ff);
-//     background: linear-gradient(300deg, #f6cade, #f1c4ff, #bcd6ff, #dbf5fc);
-//   background-size: 180% 180%;
-//   animation: gradient-animation 18s ease infinite;
-}
 
   
 @keyframes gradient-animation {
@@ -57,44 +26,24 @@ body
     }
   }
   
-.hero .herochild
-{
-    height:66vh;
-    @include breakpoint(min, medium) {
-        height: auto;
-    };
-}
+// .hero .herochild
+// {
+//     height:66vh;
+//     @include breakpoint(min, medium) {
+//         height: auto;
+//     };
+// }
 .hero
 {
-    
-    
+    height: 70vh;
 
-    .background 
-    {
-        height: 60vh; 
-        @include breakpoint(min, medium) {
-            min-height: 85vh; 
-        }; 
-
-        &.background-text
-        {
-            height: auto;
-            @include breakpoint(min, medium) {
-                min-height: 85vh ; 
-            }; 
-        }
-    }
-
-    // &.herotext .background
-    // {
-    //     @include breakpoint(min, medium) {
-    //         height: 10vh !important; 
-    //     }; 
-    // }
+    @include breakpoint(min, medium) {
+        height: 85vh;
+    };
 
 }
 
-.section
+.title
 {
     .background
     {
