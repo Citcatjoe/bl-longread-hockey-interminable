@@ -2,9 +2,18 @@
 
 <!DOCTYPE HTML>
 
-<html class="h-full"> 
+<html lang="fr" class="h-full"> 
 	<head>
-		<link rel="preconnect" href="https://fonts.googleapis.com">
+
+		<!-- OneTrust Cookies Consent Notice start for blick.ch -->
+		<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="d57e5842-f42f-46bc-a4ea-4a82bd82322c" ></script>
+		<script type="text/javascript">
+		function OptanonWrapper() { }
+		</script>
+		<!-- OneTrust Cookies Consent Notice end for blick.ch --> 
+		
+		<script src="https://cdn.tailwindcss.com"></script>  
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -16,35 +25,28 @@
 		{{ block('head_brand') }}
 	</head>
 
-	<body class="bg-gray-200 h-full">
-		{# {{ block('bar_brand') }} #}
+	<body class="bg-gray-200 h-full"> 
+		
+		<!-- {{ block('loading_overlay') }} -->
 		{{ block('gtm') }}
 		{{ block('header') }}
-		{{ block('overlay') }}
-		{# <?php include 'hb_header_tp.php'; ?> #}
+		{{ block('menu_overlay') }}
+		{# <?php include 'hb_header_tp.php'; ?> #} 
 		
 		<div class="hero container flex max-w-screen-2xl relative">
-			<div class="herooverlay absolute w-full h-full <!--bg-black opacity-40--> z-10"></div>
+			<div class="gradient absolute w-full h-full <!--bg-black opacity-40--> z-10"></div>
 			<div class="txtcontainer  container max-w-4xl absolute  z-10 left-1/2 -translate-x-1/2 bottom-16 md:bottom-1/2 translate-y-0 md:translate-y-1/2">
 				<h1 class="text-center text-white pb-2 md:pb-6"><span class="part1">Mort</span><br><span class="part2">Subite</span></h1>
 				<h2 class="w-full text-center text-white text-xl md:text-3xl">Le hockey<br>jusqu’à l’épuisement</h1>
 				{{ block('scroller') }}
-			</div>
-			
-			<div class="video-wrapper w-full relative">
+			</div>  
+			 
+			<div class="video-wrapper w-full relative" style="display:flex;justify-content:center;">    
 				<video preload="metadata" preload="auto" id="player1" playsinline autoplay muted class="" type="video/mp4">
-					<source src="https://player.vimeo.com/progressive_redirect/playback/807463297/rendition/720p/file.mp4?loc=external&signature=c095205781ec89930ee3b096785bb6b0be7c493294269451957baedbe55ce3ff" type="video/mp4"/>
+					<source src="video/intro.mp4" type="video/mp4"/>
 					Video not supported.
 				</video>
 			</div>
-			<!-- <figure class="hero w-full">
-				<div class="background w-full h-full bg-white bg-center bg-cover contrast-125 bg-gray-900 relative" style="background-image:url('img/this/1/_f1_8532.jpg');">
-					<div class="px-4 py-4 max-w-2xl absolute bottom-4">
-						<h1 class="text-3xl md:text-5xl text-white font-semibold">Je suis allé faire analyser de la drogue</h1>
-					</div>
-				</div>
-				<figcaption class="py-2 px-4 max-w-2xl text-xs">Le drug testing, comment ça marche?</figcaption>
-			</figure>  -->
 		</div>
 		
 		{# ------------------------------------------------------------------------ #}
@@ -98,12 +100,11 @@
 
 		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20 md:mb-24">
 			<div class="chapeau container py-8 max-w-2xl">
-				<h2 class="text-xl md:text-2xl mt-2 md:mt-12">Ce mardi soir, les play-off de National League vont commencer avec leur lot de matches à rallonge. Depuis plusieurs années, les rencontres se jouent sur le principe de la mort subite. Deux matches de légende ont marqué le championnat de Suisse. On se replonge dans ces soirées hors normes avec les acteurs principaux.
-				</h2>
+				<h2 class="text-xl md:text-2xl mt-2 md:mt-12">Ce samedi soir, les play-off de National League vont commencer avec leur lot de matches à rallonge. Depuis plusieurs années, les rencontres se jouent sur le principe de la mort subite. Deux matches de légende ont marqué le championnat de Suisse. On se replonge dans ces soirées hors normes avec les acteurs principaux.
+				<span class="mt-4 block p-4 italic bg-slate-300 opacity-50 text-sm">Cet article a été publié en mars 2023. À l'occasion des play-off 2024, Blick vous propose à nouveau ce récit de deux matches de légende du hockey suisse.</span>
+				</h2> 
 			</div>            
-
 			{{ block('authors') }}
-			
 			<section>
 				<div class="container pt-8 pb-4 max-w-2xl">
 					<p class="lettrine text-lg font-light mb-6">«Ce soir-là, je n’avais qu’une envie. Que quelqu’un marque. Cela aurait pu être n’importe qui. Moi, un joueur de mon équipe ou un adversaire, peu importe. Tout le monde voulait rentrer à la maison. Par chance, le calvaire s’est terminé.» La confidence vient d’un acteur du plus long match de l’histoire du championnat de Suisse. «Ne cite pas mon nom», tient-il à préciser. Mais notre interlocuteur se souvient encore comme si c’était hier de ces 21 et 22 mars 2019. Il était 00h54 au moment du but décisif et le match avait commencé depuis bientôt cinq heures.
@@ -113,14 +114,14 @@
 						<a href="#match1" class="hover:-translate-y-1">
 							<div class="text-center bg-gray-200 px-4 py-8 -ml-0 lg:-ml-16 xl:-ml-32">
 								<span class="text-sm font-normal uppercase block mb-2">Match 1</span>
-								<span class="text-2xl font-bold inline-block"><img src="img/this/picto-fribourg.png" alt="" class="w-10 float-left mr-2">Fribourg - Lausanne<img src="img/this/picto-lausanne.png" alt="" class="w-10 float-right ml-2"></span>
+								<span class="text-2xl font-bold inline-block"><img src="img/this/picto-fribourg.png" alt="pictogramme Fribourg Gottéron" class="w-10 float-left mr-2">Fribourg - Lausanne<img src="img/this/picto-lausanne.png" alt="Pictrogramme Lausanne HC" class="w-10 float-right ml-2"></span>
 								<span class="block text-lg">29 mars 2022. 3-2 ap.</span>
 							</div>
 						</a>
 						<a href="#match2" class="hover:-translate-y-1">
 							<div class="text-center bg-gray-200 px-4 py-8 -mr-0 lg:-mr-16 xl:-mr-32">
 								<span class="text-sm font-normal uppercase block mb-2">Match 2</span>
-								<span class="text-2xl font-bold inline-block"><img src="img/this/picto-geneve.png" alt="" class="w-10 float-left mr-2">Genève - Berne<img src="img/this/picto-berne.png" alt="" class="w-10 float-right ml-2"></span>
+								<span class="text-2xl font-bold inline-block"><img src="img/this/picto-geneve.png" alt="Pictrogramme SC Genève" class="w-10 float-left mr-2">Genève - Berne<img src="img/this/picto-berne.png" alt="Pictrogramme HC Berne" class="w-10 float-right ml-2"></span>
 								<span class="block text-lg">21 mars 2019. 2-3 ap.</span>
 							</div>
 						</a>
@@ -131,10 +132,9 @@
 
 		<!-- CHAPITRE 1 -->
 		<div class="container max-w-screen-2xl px-4 relative bg-white pb-12 md:pb-20 md:mb-24">
-			<!-- <h2 class="text-3xl">Match 1 : Victoire fribourgeoise après prolongations, 104 minutes et 58 secondes de jeu</h2> -->
 			<figure class="title -ml-4 -mr-4" id="match1">
-				<img src="img/this/match1desktop.png" alt="" class="mobile-hidden">
-				<img src="img/this/match1mobile.png" alt="" class="desktop-hidden">
+				<img src="img/this/match1desktop.png" alt="Image confrontation Fribourg Lausanne desktop" class="mobile-hidden">
+				<img src="img/this/match1mobile.png" alt="Image confrontation Fribourg Lausanne mobile" class="desktop-hidden">
 				<!-- <figcaption class="py-2 px-4 max-w-2xl text-xs">Le drug testing, comment ça marche?</figcaption> -->
 			</figure>
 			<section>
@@ -167,7 +167,7 @@
 					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12">
 						<div class="container">
 							<div class="w-full">
-								<img src="img/this/quote-furrer.png" alt="">
+								<img src="img/this/quote-furrer.png" alt="Citation de Furrer">
 							</div>
 						</div>
 					</figure>
@@ -179,7 +179,7 @@
 					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
 						<div class="container">
 							<div class="w-full">
-								<img src="img/this/photo1.jpg" alt="">
+								<img src="img/this/photo1.jpg" alt="Images de Chris DiDomenico et Philippe Furrer">
 								<figcaption class="py-2 text-xs">Chris DiDomenico (à g.) et Philippe Furrer fêtent le but décisif.</figcaption>
 							</div>
 						</div>
@@ -190,7 +190,7 @@
 					</p>
 					<div class="video-wrapper -mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-8 md:mb-12 aspect-video">
 						<video controls preload="auto" id="player2" playsinline autoplay muted loop class="video-js">
-							<source src="https://player.vimeo.com/progressive_redirect/playback/807497861/rendition/720p/file.mp4?loc=external&signature=80a9f088ec1c02b3c5247b0a11571b56fdeb24169e9eeb87d1934b081fa7e0fa" type="video/mp4"/>
+							<source src="video/hockey-pt9.mp4" type="video/mp4"/>
 							Video not supported.
 						</video>
 					</div>
@@ -210,7 +210,7 @@
 							<figure class="<!--w-1/3 float-right--> w-8/12 md:w-1/3">
 								<div class="container">
 									<div class="w-full">
-										<img src="img/this/medaillon-genazzi2.jpg" alt="" class="rounded-full">
+										<img src="img/this/medaillon-genazzi2.jpg" alt="Portrait de Joel Genazzi" class="rounded-full">
 										<!-- <figcaption class="py-2 px-2 text-xs font-normal"><b>Joël Genazzi</b>, joueur du Lausanne HC</figcaption> -->
 									</div>
 								</div>
@@ -238,11 +238,11 @@
 					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mb-6">
 						<div class="pt-4 grid gap-4 md:grid-cols-2">
 							<div class="">
-								<img src="img/this/photoxx.jpg" alt="">
+								<img src="img/this/photoxx.jpg" alt="La joue des joueurs de Fribourg Gottéron">
 								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
 							</div>
 							<div class="">
-								<img src="img/this/photo2.jpg" alt="">
+								<img src="img/this/photo2.jpg" alt="La détresse des joueurs de Lausanne HC">
 								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
 							</div>
 						</div>
@@ -256,7 +256,7 @@
 					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12">
 						<div class="container">
 							<div class="w-full">
-								<img src="img/this/quote-bertschy.png" alt="">
+								<img src="img/this/quote-bertschy.png" alt="Citation de Bertschy">
 							</div>
 						</div>
 					</figure>
@@ -267,8 +267,8 @@
 					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
 						<div class="container py-4">
 							<div class="w-full">
-								<img src="img/this/photo3.jpg" alt="">
-								<figcaption class="py-2 text-xs">Reto Berrra ne s’attendait probablement pas à passer une soirée aussi longue. (Photo Adrien Perritaz)</figcaption>
+								<img src="img/this/photo3.jpg" alt="Reto Berra à la fin du match">
+								<figcaption class="py-2 text-xs">Reto Berra ne s’attendait probablement pas à passer une soirée aussi longue. (Photo Adrien Perritaz)</figcaption>
 							</div>
 						</div>
 					</figure>
@@ -281,8 +281,8 @@
 		<div class="container max-w-screen-2xl px-4 relative bg-white pb-2 md:pb-12 md:pb-20 md:mb-24">
 			<!-- <h2 class="text-3xl">Match 1 : Victoire fribourgeoise après prolongations, 104 minutes et 58 secondes de jeu</h2> -->
 			<figure class="title -ml-4 -mr-4" id="match2">
-				<img src="img/this/match2desktop.png" alt="" class="mobile-hidden">
-				<img src="img/this/match2mobile.png" alt="" class="desktop-hidden">
+				<img src="img/this/match2desktop.png" alt="Image de la confrontation Genève Berne desktop" class="mobile-hidden">
+				<img src="img/this/match2mobile.png" alt="Image de la confrontation Genève Berne mobile" class="desktop-hidden">
 				<!-- <figcaption class="py-2 px-4 max-w-2xl text-xs">Le drug testing, comment ça marche?</figcaption> -->
 			</figure>
 			<section>
@@ -310,7 +310,7 @@
 					</div>
 					<div class="video-wrapper -mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-8 md:mb-12 aspect-video">
 						<video controls preload="auto" id="player3" playsinline autoplay muted loop class="video-js">
-							<source src="https://player.vimeo.com/progressive_redirect/playback/807497992/rendition/720p/file.mp4?loc=external&signature=000fc8ad1dc5576a9bb060b5ccdeb2a752a7bddab4d1ac1fc4803411f0489b48" type="video/mp4"/>
+							<source src="video/hockey-pt18.mp4" type="video/mp4"/>
 							<!-- <source src="https://www.youtube.com/embed/DdDnur3_Gk0" type="video/mp4"/> -->
 							Video not supported.
 						</video>
@@ -320,7 +320,7 @@
 					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12">
 						<div class="container">
 							<div class="w-full">
-								<img src="img/this/quote-rod.png" alt="">
+								<img src="img/this/quote-rod.png" alt="Citation de Rod">
 							</div>
 						</div>
 					</figure>
@@ -332,7 +332,7 @@
 					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
 						<div class="container py-4">
 							<div class="w-full">
-								<img src="img/this/photo4.jpg" alt="">
+								<img src="img/this/photo4.jpg" alt="Robert Mayer concède le but décisif en fin de troisième prolongation">
 								<figcaption class="py-2 text-xs">Robert Mayer a concédé le but décisif en fin de troisième prolongation.</figcaption>
 							</div>
 						</div>
@@ -345,7 +345,7 @@
 					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-6 mb-12">
 						<div class="container">
 							<div class="w-full">
-								<img src="img/this/quote-mcsorley.png" alt="">
+								<img src="img/this/quote-mcsorley.png" alt="Citation de Chrise McSorley">
 							</div>
 						</div>
 					</figure>
@@ -358,11 +358,11 @@
 					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
 						<div class="pt-4 grid gap-4 md:grid-cols-2">
 							<div class="">
-								<img src="img/this/photomcsorley.jpg" alt="">
+								<img src="img/this/photomcsorley.jpg" alt="Image de Chris Mcsorley">
 								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
 							</div>
 							<div class="">
-								<img src="img/this/photomcsorley2.jpg" alt="">
+								<img src="img/this/photomcsorley2.jpg" alt="Image de Chrise McSorley">
 								<!-- <figcaption class="py-2 text-xs">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dignissimos nobis, reprehenderit ex sint nostrum laboriosam provident voluptate id et rem saepe quia praesentium libero sapiente? Ratione excepturi est culpa.</figcaption> -->
 							</div>
 						</div>
@@ -377,7 +377,7 @@
 					<figure class="float-right mb-6">
 						<div class="container py-4">
 							<div class="w-full">
-								<img src="img/this/tableau.png" alt="">
+								<img src="img/this/tableau.png" alt="Liste des matchs les plus longs du hockey suisse">
 								<!-- <figcaption class="py-2 text-xs">Sébastien se livre: «La dernière drogue que je prends, c’est la MDMA, et de manière réfléchie, si je suis dans un bon mood.»</figcaption> -->
 							</div>
 						</div>
@@ -388,7 +388,7 @@
 					</p>
 					<div class="video-wrapper -mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-8 md:mb-12 aspect-video"> 
 						<video controls preload="auto" id="player4" playsinline autoplay muted loop class="video-js">
-							<source src="https://player.vimeo.com/progressive_redirect/playback/807498021/rendition/720p/file.mp4?loc=external&signature=4f74386013dbd1a8c221b8d15a767ff95f404b3100bdf2b081ae86ccba7e94d7" type="video/mp4"/>
+							<source src="video/hockey-pt28.mp4" type="video/mp4"/>
 							Video not supported.
 						</video>
 					</div>
@@ -402,7 +402,7 @@
 					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
 						<div class="container py-4">
 							<div class="w-full">
-								<img src="img/this/photo5.jpg" alt="">
+								<img src="img/this/photo5.jpg" alt="Mark Arcobello célèbre le but">
 								<figcaption class="py-2 text-xs">Au second plan, Mark Arcobello célèbre ce but qui qualifie Berne pour la demi-finale.</figcaption>
 							</div>
 						</div>
@@ -415,7 +415,7 @@
 					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
 						<div class="container py-4">
 							<div class="w-full">
-								<img src="img/this/photo6.jpg" alt="">
+								<img src="img/this/photo6.jpg" alt="La joie des Bernois est à la hauteur de la déception des fans genevois">
 								<figcaption class="py-2 text-xs">La joie des Bernois est à la hauteur de la déception des fans genevois.</figcaption>
 							</div>
 						</div>
@@ -451,7 +451,7 @@
 					<figure class="-mx-0 lg:-mx-32 xl:-mx-64 mt-4 md:mt-12 mb-4 md:mb-6">
 						<div class="container py-4">
 							<div class="w-full">
-								<img src="img/this/quote-moser.png" alt="">
+								<img src="img/this/quote-moser.png" alt="Citation moser">
 							</div>
 						</div>
 					</figure>
@@ -476,7 +476,7 @@
 		<script src="js/main.js"></script>
 		<script src="js/intro.js"></script>
 		<!-- <script src="js/headroom.min.js"></script> -->
-		<script src="https://cdn.tailwindcss.com"></script>
+		
 
 		 
 	</body>

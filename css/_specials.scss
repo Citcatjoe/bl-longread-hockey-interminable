@@ -17,19 +17,7 @@ body
     margin: auto;
 }
 
-.overlay
-{
-    opacity: 0;
-    visibility: hidden;
-    transition: all .2s;
 
-    &.is-visible 
-    {
-        opacity: .5;
-        visibility: visible;
-        transition: all .2s;
-    }
-}
 
 .is-blurry
 {

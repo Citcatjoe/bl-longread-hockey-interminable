@@ -215,9 +215,20 @@ header.headroom--unpinned {
   height: 100%;
 }
 
-.herooverlay {
+.gradient {
   background: radial-gradient(ellipse at center, transparent 0%, black 100%);
   opacity: 0.5;
+}
+
+.menu_overlay {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s;
+}
+.menu_overlay.is-visible {
+  opacity: 0.5;
+  visibility: visible;
+  transition: all 0.2s;
 }
 
 footer {
@@ -448,17 +459,6 @@ body.is-visible {
 
 .container {
   margin: auto;
-}
-
-.overlay {
-  opacity: 0;
-  visibility: hidden;
-  transition: all 0.2s;
-}
-.overlay.is-visible {
-  opacity: 0.5;
-  visibility: visible;
-  transition: all 0.2s;
 }
 
 .is-blurry {

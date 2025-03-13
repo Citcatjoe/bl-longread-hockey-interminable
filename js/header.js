@@ -3,7 +3,7 @@
 
 jQuery(document).ready(function($) 
 {
-	var overlay =$('.overlay'),
+	var menu_overlay =$('.menu_overlay'),
 		jsCopy = $('.copy'),
 		jsCopied = $('.copied');
 		heroHeight = $('.hero').height();
@@ -19,11 +19,11 @@ jQuery(document).ready(function($)
 	function openAsideR(){
 		asideR.removeClass('translate-x-full');
 		closeAsideL();
-		overlay.addClass('is-visible');
+		menu_overlay.addClass('is-visible');
 	}
 	function closeAsideR(){
 		asideR.addClass('translate-x-full');
-		overlay.removeClass('is-visible');
+		menu_overlay.removeClass('is-visible');
 	}
 
 	//--- ASIDE LEFT ---//
@@ -37,15 +37,15 @@ jQuery(document).ready(function($)
 	function openAsideL(){
 		asideL.removeClass('-translate-x-full');
 		closeAsideR();
-		overlay.addClass('is-visible');
+		menu_overlay.addClass('is-visible');
 	}
 	function closeAsideL(){
 		asideL.addClass('-translate-x-full');
-		overlay.removeClass('is-visible');
+		menu_overlay.removeClass('is-visible');
 	}
 
 	
-	overlay.click(function(e){
+	menu_overlay.click(function(e){
 		closeAsideL();
 		closeAsideR();
 	});
